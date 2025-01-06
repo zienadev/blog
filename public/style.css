@@ -1,0 +1,129 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+:root {
+    --first-color: #204e83;
+    --second-color: #c6c4c1;
+}
+
+.categories a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f3f3;
+}
+
+nav.navbar {
+    background: black !important;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+/* start content */
+.content {
+    margin-top: 60px;
+}
+
+.content .post {
+    text-align: center;
+    background: #fff;
+    padding: 20px 22px;
+    border: 1px solid #EAEAEA;
+    margin-bottom: 30px;
+}
+
+/* .post .post-image {
+    width: 100%;
+} */
+
+/* .post .post_image img {
+    width: 600px;
+  height: 320px;
+} */
+
+.post .post-title {
+    margin: 10px 0;
+}
+
+.post .post-description .btn-custom {
+    background: transparent;
+    color: var(--first-color);
+    border: 1px solid var(--first-color);
+    border-radius: 6px;
+    font-size: 16px;
+    width: 110px;
+    margin-bottom: 10px;
+
+}
+
+.post .post-description .btn-custom:hover {
+    background: var(--first-color);
+    color: #fff;
+
+}
+
+.post .post-title .post-info {
+    color: var(--second-color);
+}
+
+.post .post-title .post-info span {
+    margin-right: 10px;
+}
+
+.post .post-title .post-info i {
+    margin-left: 5px;
+}
+
+/* End content */
+
+/* Start Sidebar */
+
+.categories {
+    background: #FFF;
+    border: 1px solid #EAEAEA;
+    padding: 20px 10px;
+}
+
+.categories h4 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(var(--second-color));
+}
+
+.categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.categories ul li {
+    background: var(--first-color);
+    margin-bottom: 3px;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+
+.categories ul li:hover {
+    background-color: var(--second-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.categories ul li a {
+    color: white;
+}
+
+/* End Sidebar */
+
+footer {
+    background: black;
+    border-top: 1px solid #EAEAEA;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    color: white;
+}
+
+/* dashboard */
