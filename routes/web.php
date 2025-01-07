@@ -22,10 +22,12 @@ use App\Models\Category;
 // Route::delete('posts/{post}', [PostController::class, "destroy"])->name("posts.destroy");
 // Route::get('posts/{post}', [PostController::class, "show"])->name("posts.show");
 
-
 Route::get("/", [AuthController::class, "showLoginForm"])->name("login");
 Route::post("/", [AuthController::class, "login"]);
+Route::get("register", [AuthController::class, "showRegisterForm"])->name("register");
+Route::post("register", [AuthController::class, "register"]);
 Route::get('home', [ShowController::class, "show"])->name('show.home');
+// Route::get('details', [ShowController::class, "details"])->name('show.homee');
 
 Route::middleware("guest")->group(function () {
     // Route::get("/", [AuthController::class, "showLoginForm"])->name("login");

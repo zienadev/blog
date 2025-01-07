@@ -25,7 +25,8 @@ class CommentController extends Controller
     public function create(Post $post)
     {
         $comments = Comment::where('post_id', $post->id)->get();
-        return view('posts.show', compact('comment'));
+        // return view('posts.show', compact('comment'));
+        return view('comments.create', compact('comments'));
     }
 
     /**
